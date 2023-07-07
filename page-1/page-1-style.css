@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    margin: 0;
+}
+.header {
+    grid-area: header;
+    border-bottom: 2px solid rgb(193, 193, 193);
+}
+.aside {
+    grid-area: aside;
+}
+.main {
+    grid-area: main;
+}
+.nav {
+    grid-area: nav;
+}
+.footer {
+    grid-area: footer;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 10% 180% 20%;
+    grid-template-areas: 
+    "aside header header"
+    "aside main nav"
+    "aside footer footer";
+}
+.aside {
+    background-color: black;
+    color: white;
+}
+.aside-image {
+    height: 14%;
+    margin: 7% 2% 2% 4%;
+    border: 10px whitesmoke solid;;
+}
+.aside-title {
+    margin: 4% 2% 4% 2%;
+}
+.aside-text {
+    font-size: large;
+    margin: 2% 2% 2% 2%;
+    color:rgb(181, 181, 181);
+}
+.learn-more {
+    font-size: medium;
+    color:rgb(98, 98, 98);
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 5% 0 0 2%;
+}
+.header-back {
+    margin-left: 1%;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.main-text-content {
+    margin: 1% 1% 1% 1%;
+}
+.main-title {
+    font-size: 230%;
+    margin: 0 0 0 1%;
+}
+.secondary-title {
+    font-size: 120%;
+    margin: 1% 0 0 1%;
+    color:rgb(98, 98, 98)
+}
+.main-text {
+    margin: 7% 1% 0 1%;
+}
+.footer-back {
+    border-bottom: 2px solid rgb(193, 193, 193);
+    padding: 0 0 2% 1%;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.external-platform-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40%;
+}
+.skills-title {
+    letter-spacing: 3px;
+}
+.contact-info-title {
+    letter-spacing: 3px;
+}
+.buttons {
+    border-radius: 0;
+    border: none;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-size: large;
+    height: 200%;
+    margin-right: 10%;
+}
